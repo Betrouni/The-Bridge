@@ -204,8 +204,7 @@ nav {
   width: 80px;
   -webkit-transform: translateY(35px);
           transform: translateY(35px);
-  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
-          animation: name duration timing-function delay iteration-count direction fill-mode;
+
   -webkit-animation: Traverser 4s ease-in infinite;
           animation: Traverser 4s ease-in infinite;
 }
@@ -222,8 +221,6 @@ nav {
   width: 80px;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
-  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
-          animation: name duration timing-function delay iteration-count direction fill-mode;
   -webkit-animation: Traverser3 7s ease-in infinite;
           animation: Traverser3 7s ease-in infinite;
 }
@@ -232,8 +229,6 @@ nav {
   width: 80px;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
-  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
-          animation: name duration timing-function delay iteration-count direction fill-mode;
   -webkit-animation: Traverser4 9s ease-in infinite;
           animation: Traverser4 9s ease-in infinite;
 }
