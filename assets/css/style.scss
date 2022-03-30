@@ -1,0 +1,290 @@
+$red: #f6685e;
+$blue_bg: #241a71;
+$grey: #e9e8f0;
+$white: #fff;
+
+body {
+    font-family: 'Raleway', "sans-serif";
+    background-image: linear-gradient(to bottom, #03a9f43b, white, white);
+    height: 100vh;
+    overflow: hidden;
+}
+#street {
+  width: 100vh;
+}
+nav {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-left {
+  display: flex;
+  padding-right: 10px;
+  width: 50%;
+  margin-left: 100px;
+  color: $blue_bg;
+  padding-top: 10px;
+  p {
+  padding-right: 15px;
+  font-size: 90%;
+}
+}
+
+
+#nav-right {
+  display: flex;
+  margin-right: 70px;
+  color: $red;
+  
+  p {
+    border: 1.5px solid $red;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-size: 90%;
+   
+  } p:nth-child(2){
+      color: white;
+      background-color: $red;
+      
+    }
+    p:nth-child(1){
+      padding-left: 35px;
+      padding-right: 35px;
+      
+      
+    }
+}
+
+#logo {
+  font-size: 140%;
+  margin-top: 8px;
+  padding-right: 60px;
+  span {color: $red;
+  font-weight: 600;}
+  
+}
+
+#mainblock {
+  height: 450px;
+  padding-top: 0px;
+
+
+    img {
+      position: absolute;
+      bottom: 50px;
+      z-index: -1;
+      width: 100vw;
+    }
+    
+    #main-text {
+      text-align: center;
+      color: $blue_bg;
+      font-size: 90%;
+    }
+  
+}
+
+#menu {
+  z-index: 3;
+  padding-top: 50px;
+
+  #marque-pages {
+    display: flex;
+    position: absolute;
+    top: -45px;
+    left: 0px;
+    z-index: -1;
+    div {
+      padding-top: 15px;
+      padding-bottom: 35px;
+      padding-right: 35px;
+      padding-left: 35px;
+      background-color: $blue_bg;
+      border-radius: 30px 30px 0 0;
+      color:white;
+    }
+    div:nth-child(2) {
+      background-color: $grey;
+      color: black;
+      transform: translateX(-10px);
+      z-index: -2;
+    }
+  }
+
+  #main-menu {
+    
+    height: 70px;
+    width: 65%;
+    background-color: white;
+    margin: auto;
+    position:relative;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 6px 0px 50px -8px rgba(0,0,0,0.46);
+
+  }
+
+  #menu-section {
+    
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 70%;
+    width: 100%;
+    input {
+      border: 0px;
+    }
+    section:nth-child(1) {
+      display: flex;
+      i {
+        width: 25%;
+        color: $red;
+        font-size: 150%;
+      }
+      input {width: 75%;
+
+      }
+    }
+  }
+  section {
+    width: 17.5%;
+
+
+  }
+  .booking-section {
+    border-left: 1px solid $red;
+    height: 45px;
+    margin-top: 12.5px;
+    i {
+      color: $red;
+        font-size: 150%;
+        padding-left: 20px;
+    }
+  }
+  #button-section {
+    span { color: white;
+      background-color: $red;
+      border: 1.5px solid $red;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 140%;
+  width: 30%;}
+  }
+
+}
+
+#car1 {
+  height: 40px;
+  width: 80px;
+  transform: translateY(35px);
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: Traverser 4s ease-in infinite;
+
+
+}
+
+
+#car2 {
+
+  width: 80px;
+  transform: translateY(0px);
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: Traverser2 5s ease-in infinite;
+
+
+
+}
+#car3 {
+
+  width: 80px;
+  transform: translateY(20px);
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: Traverser3 7s ease-in infinite;
+
+
+
+}
+#car4 {
+
+  width: 80px;
+  transform: translateY(-20px);
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: Traverser4 9s ease-in infinite;
+ 
+
+
+}
+
+#dog {
+  width: 80px;
+  transform: translateY(35px);
+  position: absolute;
+  bottom: 0%;
+  animation: Traverser5 10s ease-in infinite;
+}
+
+#cloud {
+  position: absolute;
+  top: -100px;
+  width: 700px;
+  z-index: 2;
+  animation: Traverser6 20s  infinite;
+  
+}
+#cloud-2 {
+  position: absolute;
+  top: 0px;
+  width: 600px;
+  animation: Traverser7 25s  infinite;
+  
+}
+@keyframes Traverser {
+
+  0%{transform: translateX(-100px);}
+  100%{transform: translateX(100vw);}
+  
+}
+
+@keyframes Traverser2 {
+
+  0%{transform: translateX(-300px);}
+  100%{transform: translateX(100vw);}
+  
+}
+
+@keyframes Traverser3 {
+
+  0%{transform: translateX(2000px);}
+  100%{transform: translateX(-100vw);}
+  
+}
+
+@keyframes Traverser4 {
+
+  0%{transform: translateX(3000px);}
+  100%{transform: translateX(-100vw);}
+  
+}
+
+@keyframes Traverser5 {
+
+  0%{transform: translateX(-1000px);}
+  100%{transform: translateX(100vw);}
+  
+}
+@keyframes Traverser6 {
+
+  0%{transform: translateX(250vh);}
+  100%{transform: translateX(-90vh);}
+  
+}
+@keyframes Traverser7 {
+
+  0%{transform: translateX(240vh);}
+  100%{transform: translateX(-140vh);}
+  
+}
